@@ -25,9 +25,9 @@ class COVIDFetchRequest: ObservableObject {
     }
     
     func getCurrentTotal() {
-
+        
         AF.request("https://covid-19-data.p.rapidapi.com/totals?format=json", headers: headers).responseJSON { response in
-//            print(response)
+            //            print(response)
             guard let result = response.data else {print("No current total data"); return}
             let json = JSON(result)
             
@@ -35,7 +35,7 @@ class COVIDFetchRequest: ObservableObject {
             let recovered = json[0]["recovered"].intValue
             let deaths = json[0]["deaths"].intValue
             let critical = json[0]["critical"].intValue
-         
+            
             self.totalData = TotalData(confirmed: confirmed, critical: critical, deaths: deaths, recovered: recovered)
         }
     }
@@ -47,18 +47,24 @@ class COVIDFetchRequest: ObservableObject {
             guard let dataDict = result as? [[String: Any]] else {print("Could not cast dictionary array"); return}
             
             for countryData in dataDict {
-//                print(countryData)
-                guard let country = countryData["country"] as? String,
-                      let longitude = countryData["longitude"] as? Double,
-                      let lattitude = countryData["latitude"] as? Double,
-                      let confirmed = countryData["confirmed"] as? Int64,
-                      let deaths = countryData["deaths"] as? Int64,
-                      let recovered = countryData["recovered"] as? Int64,
-                      let critical = countryData["critical"] as? Int64 else {return}
-                let countryData = CountryData(country: country, confirmed: confirmed, critical: critical, deaths: deaths, recovered: recovered, longitude: longitude, latitude: lattitude)
+                //                print(countryData)
+                let country = countryData["country"] as? String ?? "error"
+                let longitude = countryData["longitude"] as? Double ?? 0
+                let latitude = countryData["latitude"] as? Double ?? 0
+                let confirmed = countryData["confirmed"] as? Int64 ?? 0
+                let deaths = countryData["deaths"] as? Int64 ?? 0
+                let recovered = countryData["recovered"] as? Int64 ?? 0
+                let critical = countryData["critical"] as? Int64 ?? 0
+                
+                let countryData = CountryData(country: country, confirmed: confirmed, critical: critical, deaths: deaths, recovered: recovered, longitude: longitude, latitude: latitude)
                 allCountryData.append(countryData)
+//                print(allCountryData)
             }
             self.allCountries = allCountryData.sorted(by: {$0.confirmed > $1.confirmed})
+//            print(allCountries)
         }
     }
 }
+/**
+ [covidStats.CountryData(country: "Afghanistan", confirmed: 39616, critical: 93, deaths: 1470, recovered: 33058, longitude: 67.709953, latitude: 33.93911), covidStats.CountryData(country: "Åland Islands", confirmed: 0, critical: 0, deaths: 0, recovered: 0, longitude: 20.3711715, latitude: 60.1995487), covidStats.CountryData(country: "Albania", confirmed: 14899, critical: 17, deaths: 411, recovered: 9215, longitude: 20.168331, latitude: 41.153332
+ */
