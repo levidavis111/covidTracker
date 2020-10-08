@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		62352556D43C33584E7C989E /* Pods_covidStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BB8559802966D5F5841D19 /* Pods_covidStats.framework */; };
 		FC3EC109252F9AA50084FAE1 /* RecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC108252F9AA50084FAE1 /* RecentView.swift */; };
+		FC3EC10C252F9D130084FAE1 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC10B252F9D130084FAE1 /* ListHeaderView.swift */; };
+		FC3EC10F252FA0D30084FAE1 /* CountryDataRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC10E252FA0D30084FAE1 /* CountryDataRowView.swift */; };
 		FCAC86D82523BCD900C7935D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAC86D72523BCD900C7935D /* AppDelegate.swift */; };
 		FCAC86DA2523BCD900C7935D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAC86D92523BCD900C7935D /* SceneDelegate.swift */; };
 		FCAC86DC2523BCD900C7935D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAC86DB2523BCD900C7935D /* ContentView.swift */; };
@@ -26,6 +28,8 @@
 		95BB8559802966D5F5841D19 /* Pods_covidStats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_covidStats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A3C8AFBAD9FF3F299791F2 /* Pods-covidStats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-covidStats.debug.xcconfig"; path = "Target Support Files/Pods-covidStats/Pods-covidStats.debug.xcconfig"; sourceTree = "<group>"; };
 		FC3EC108252F9AA50084FAE1 /* RecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentView.swift; sourceTree = "<group>"; };
+		FC3EC10B252F9D130084FAE1 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
+		FC3EC10E252FA0D30084FAE1 /* CountryDataRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataRowView.swift; sourceTree = "<group>"; };
 		FCAC86D42523BCD900C7935D /* covidStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = covidStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCAC86D72523BCD900C7935D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCAC86D92523BCD900C7935D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 				FCAC86E52523BCE100C7935D /* Info.plist */,
 				FCAC86DB2523BCD900C7935D /* ContentView.swift */,
 				FC3EC108252F9AA50084FAE1 /* RecentView.swift */,
+				FC3EC10B252F9D130084FAE1 /* ListHeaderView.swift */,
+				FC3EC10E252FA0D30084FAE1 /* CountryDataRowView.swift */,
 				FCAC86DF2523BCE100C7935D /* Preview Content */,
 				FCAC86F02523C2EC00C7935D /* Networking */,
 				FCAC86EF2523C2D400C7935D /* Secret */,
@@ -263,7 +269,9 @@
 			files = (
 				FCAC86D82523BCD900C7935D /* AppDelegate.swift in Sources */,
 				FCAC86EE2523C2AA00C7935D /* Secret.swift in Sources */,
+				FC3EC10C252F9D130084FAE1 /* ListHeaderView.swift in Sources */,
 				FCAC86F72523C87900C7935D /* CountryData.swift in Sources */,
+				FC3EC10F252FA0D30084FAE1 /* CountryDataRowView.swift in Sources */,
 				FCAC86DA2523BCD900C7935D /* SceneDelegate.swift in Sources */,
 				FCAC86EC2523C09C00C7935D /* COVIDFetchRequest.swift in Sources */,
 				FCAC86F52523C75400C7935D /* TotalData.swift in Sources */,
