@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct TotalDataCard: View {
+struct TotalDataCardView: View {
     
     var number: String = "Error"
     var name: String = "Confirmed"
@@ -36,6 +36,6 @@ struct TotalDataCard: View {
 
 struct TotalDataCard_Previews: PreviewProvider {
     static var previews: some View {
-        TotalDataCard()
+        TotalDataCardView()
     }
 }
