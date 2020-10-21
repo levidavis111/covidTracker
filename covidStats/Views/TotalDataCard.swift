@@ -15,17 +15,22 @@ struct TotalDataCard: View {
     var color: Color = .primary
     
     var body: some View {
-        
         GeometryReader { geometry in
             VStack {
-                Text("")
-                
-                Text("")
-            }
+                Text(self.number)
+                    .font(.subheadline)
+                    .padding(5)
+                    .foregroundColor(self.color)
+                Text(self.name)
+                    .font(.subheadline)
+                    .padding(5)
+                    .foregroundColor(self.color)
+            }.frame(width: geometry.size.width, height: 80, alignment: .center)
+            .background(Color("cardBackgroundGray"))
+            .cornerRadius(8.0)
         }
         
         
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
