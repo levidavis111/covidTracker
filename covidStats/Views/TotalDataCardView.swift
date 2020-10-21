@@ -34,7 +34,7 @@ struct TotalDataCardView: View {
     }
 }
 
-struct TotalDataCard_Previews: PreviewProvider {
+struct TotalDataCardView_Previews: PreviewProvider {
     static var previews: some View {
         TotalDataCardView()
     }
