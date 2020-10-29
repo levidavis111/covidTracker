@@ -13,18 +13,24 @@ struct CountryDetailView: View {
     var countryData: CountryData
     
     var body: some View {
-        
         VStack {
-            CountryDetailRowView(number: countryData.confirmed.formatNumber(), name: "Confirmed")
-            CountryDetailRowView(number: countryData.critical.formatNumber(), name: "Critical", color: .yellow)
-            CountryDetailRowView(number: countryData.deaths.formatNumber(), name: "Deaths", color: .red)
-            CountryDetailRowView(number: String(format: "%.2f", countryData.fatalityRate), name: "Death%", color: .red)
-            CountryDetailRowView(number: countryData.recovered.formatNumber(), name: "Recovered", color: .green)
-            CountryDetailRowView(number: String(format: "%.2f", countryData.recoveredRate), name: "Recovered%", color: .green)
+            VStack {
+                CountryDetailRowView(number: countryData.confirmed.formatNumber(), name: "Confirmed")
+                    .padding(.top)
+                CountryDetailRowView(number: countryData.critical.formatNumber(), name: "Critical", color: .yellow)
+                CountryDetailRowView(number: countryData.deaths.formatNumber(), name: "Deaths", color: .red)
+                CountryDetailRowView(number: String(format: "%.2f", countryData.fatalityRate), name: "Death%", color: .red)
+                CountryDetailRowView(number: countryData.recovered.formatNumber(), name: "Recovered", color: .green)
+                CountryDetailRowView(number: String(format: "%.2f", countryData.recoveredRate), name: "Recovered%", color: .green)
+            }
+            .background(Color("cardBackgroundGray"))
+            .cornerRadius(8)
+            .padding()
+            
+            Spacer()
         }
-        .background(Color("cardBackgroundGray"))
-        .cornerRadius(8)
-        .padding()
+        .padding(.top, 50)
+        .navigationBarTitle(countryData.country)
     }
 }
 

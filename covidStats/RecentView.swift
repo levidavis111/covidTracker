@@ -27,7 +27,11 @@ struct RecentView: View {
                     ForEach(covidFetch.allCountries.filter {
                         self.searchText.isEmpty ? true : $0.country.lowercased().contains(self.searchText.lowercased())
                     }, id: \.country) {countryData in
-                        CountryDataRowView(countryData: countryData)
+                        NavigationLink(
+                            destination: CountryDetailView(countryData: countryData)) {
+                            CountryDataRowView(countryData: countryData)
+                        }
+                        
                     }
                 }
             }//End VStack
