@@ -15,7 +15,6 @@ struct TotalDataView: View {
     var body: some View {
         
         VStack {
-            
             HStack {
                 TotalDataCardView(number: totaldata.confirmed.formatNumber(), name: "Confirmed", color: .primary)
                 TotalDataCardView(number: totaldata.critical.formatNumber(), name: "Critical", color: .yellow)

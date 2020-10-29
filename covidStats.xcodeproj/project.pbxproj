@@ -13,6 +13,7 @@
 		FC3EC10C252F9D130084FAE1 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC10B252F9D130084FAE1 /* ListHeaderView.swift */; };
 		FC3EC10F252FA0D30084FAE1 /* CountryDataRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC10E252FA0D30084FAE1 /* CountryDataRowView.swift */; };
 		FC3EC112252FA21B0084FAE1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC111252FA21B0084FAE1 /* Extension.swift */; };
+		FC3EC8BE254B415600C5DE23 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC8BD254B415600C5DE23 /* SearchView.swift */; };
 		FC6398682540A32A0013A9B9 /* TotalDataCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6398672540A32A0013A9B9 /* TotalDataCardView.swift */; };
 		FCAC86D82523BCD900C7935D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAC86D72523BCD900C7935D /* AppDelegate.swift */; };
 		FCAC86DA2523BCD900C7935D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAC86D92523BCD900C7935D /* SceneDelegate.swift */; };
@@ -35,6 +36,7 @@
 		FC3EC10B252F9D130084FAE1 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
 		FC3EC10E252FA0D30084FAE1 /* CountryDataRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataRowView.swift; sourceTree = "<group>"; };
 		FC3EC111252FA21B0084FAE1 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		FC3EC8BD254B415600C5DE23 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		FC6398672540A32A0013A9B9 /* TotalDataCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataCardView.swift; sourceTree = "<group>"; };
 		FCAC86D42523BCD900C7935D /* covidStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = covidStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCAC86D72523BCD900C7935D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				FC3EC10E252FA0D30084FAE1 /* CountryDataRowView.swift */,
 				FC6398672540A32A0013A9B9 /* TotalDataCardView.swift */,
 				FC3D66D22540ABF9009153E0 /* TotalDataView.swift */,
+				FC3EC8BD254B415600C5DE23 /* SearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				FCAC86DA2523BCD900C7935D /* SceneDelegate.swift in Sources */,
 				FCAC86EC2523C09C00C7935D /* COVIDFetchRequest.swift in Sources */,
 				FCAC86F52523C75400C7935D /* TotalData.swift in Sources */,
+				FC3EC8BE254B415600C5DE23 /* SearchView.swift in Sources */,
 				FCAC86DC2523BCD900C7935D /* ContentView.swift in Sources */,
 				FC3D66D32540ABF9009153E0 /* TotalDataView.swift in Sources */,
 				FC3EC109252F9AA50084FAE1 /* RecentView.swift in Sources */,
@@ -434,6 +438,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"covidStats/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = covidStats/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +459,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"covidStats/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = covidStats/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
