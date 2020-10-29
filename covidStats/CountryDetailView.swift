@@ -9,13 +9,27 @@
 import SwiftUI
 
 struct CountryDetailView: View {
+    
+    var countryData: CountryData
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            CountryDetailRowView(number: countryData.confirmed.formatNumber(), name: "Confirmed")
+            CountryDetailRowView(number: countryData.critical.formatNumber(), name: "Critical", color: .yellow)
+            CountryDetailRowView(number: countryData.deaths.formatNumber(), name: "Deaths", color: .red)
+            CountryDetailRowView(number: String(format: "%.2f", countryData.fatalityRate), name: "Death%", color: .red)
+            CountryDetailRowView(number: countryData.recovered.formatNumber(), name: "Recovered", color: .green)
+            CountryDetailRowView(number: String(format: "%.2f", countryData.recoveredRate), name: "Recovered%", color: .green)
+        }
+        .background(Color("cardBackgroundGray"))
+        .cornerRadius(8)
+        .padding()
     }
 }
 
 struct CountryDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        CountryDetailView()
+        CountryDetailView(countryData: testCountryData)
     }
 }
