@@ -17,6 +17,7 @@
 		FC3EC8C1254B445B00C5DE23 /* CountryDetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC8C0254B445B00C5DE23 /* CountryDetailRowView.swift */; };
 		FC3EC8C4254B464700C5DE23 /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC8C3254B464700C5DE23 /* CountryDetailView.swift */; };
 		FC3EC8C7254B51FC00C5DE23 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC8C6254B51FC00C5DE23 /* MapView.swift */; };
+		FC3EC8CA254B570400C5DE23 /* MapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC8C9254B570400C5DE23 /* MapContainerView.swift */; };
 		FC6398682540A32A0013A9B9 /* TotalDataCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6398672540A32A0013A9B9 /* TotalDataCardView.swift */; };
 		FCAC86D82523BCD900C7935D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAC86D72523BCD900C7935D /* AppDelegate.swift */; };
 		FCAC86DA2523BCD900C7935D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAC86D92523BCD900C7935D /* SceneDelegate.swift */; };
@@ -43,6 +44,7 @@
 		FC3EC8C0254B445B00C5DE23 /* CountryDetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailRowView.swift; sourceTree = "<group>"; };
 		FC3EC8C3254B464700C5DE23 /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
 		FC3EC8C6254B51FC00C5DE23 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FC3EC8C9254B570400C5DE23 /* MapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerView.swift; sourceTree = "<group>"; };
 		FC6398672540A32A0013A9B9 /* TotalDataCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataCardView.swift; sourceTree = "<group>"; };
 		FCAC86D42523BCD900C7935D /* covidStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = covidStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCAC86D72523BCD900C7935D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				FCAC86DB2523BCD900C7935D /* ContentView.swift */,
 				FC3EC108252F9AA50084FAE1 /* RecentView.swift */,
 				FC3EC8C3254B464700C5DE23 /* CountryDetailView.swift */,
+				FC3EC8C9254B570400C5DE23 /* MapContainerView.swift */,
 				FC6398652540A30B0013A9B9 /* Views */,
 				FC6398632540A2F40013A9B9 /* Extensions */,
 				FCAC86DF2523BCE100C7935D /* Preview Content */,
@@ -319,6 +322,7 @@
 				FCAC86F52523C75400C7935D /* TotalData.swift in Sources */,
 				FC3EC8BE254B415600C5DE23 /* SearchView.swift in Sources */,
 				FCAC86DC2523BCD900C7935D /* ContentView.swift in Sources */,
+				FC3EC8CA254B570400C5DE23 /* MapContainerView.swift in Sources */,
 				FC3D66D32540ABF9009153E0 /* TotalDataView.swift in Sources */,
 				FC3EC109252F9AA50084FAE1 /* RecentView.swift in Sources */,
 			);

@@ -18,7 +18,11 @@ struct ContentView: View {
                 }
                 .tag(0)
             
-            //Map TK
+            MapContainerView()
+                .tabItem {
+                    Tab(imageName: "map", text: "Map")
+                }
+                .tag(1)
         }
     }
 }
